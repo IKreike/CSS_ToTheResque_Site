@@ -22,9 +22,16 @@
 <p>oefenen met 3d transforms</p>
 <img src="https://codepen.io/IKreike/pen/XJWMjyE" alt="">
 
+<h4>di 4 maart</h4>
+<p>Vandaag heel erg in dubio over welk perspectief ik wil. heb een codepen gemaakt met 3d rotaties, dus ik weet dat het kan en dat IK het kan. Ik weet alleen niet of het stylistish mijn doel is. Ik vind het 'simpele' nep-perspectief er veel gaver uitzien. Sanne heeft me laten zien dat zulke dingen mogleijk zijn met gradient backgrounds, de techniek kende ik al maar het zou niet bij me opgekomen zijn om het zelf op die manier te doen.</p>
+<a href="https://codepen.io/IKreike/pen/VYwpRPp?editors=1100"></a>
+<img src="./assets/2d perspectief.png" alt="2d perspectief">
+<img src="./assets/3d perspectief.png" alt="3d perspectief">
+
 
 <p></p>
 <img src="" alt="">
+<a href="http://"></a>
 
 
 
@@ -39,6 +46,11 @@ https://www.digitalocean.com/community/tutorials/css-gradient-borders-pure-css?u
 
 <p>workshop van sanne over hoekjes en borders
 https://codepen.io/IKreike/pen/pvoeRem?editors=1100</p>
+<p>tips van sanne over gradients over elkaar
+https://codepen.io/IKreike/pen/LEYWMLm?editors=0100 </p>
+
+<p>cube tutorial and try-outs</p>
+<p>https://3dtransforms.desandro.com/cube</p>
 
 
 <p></p>
