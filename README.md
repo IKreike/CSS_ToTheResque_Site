@@ -10,13 +10,38 @@
 <p>Deze foto vind ik vooral voor de layout van interactieve elementen gaaf. Het is heel fijn om een soort van display in het midden te hebben, en de dingen aan de zijkant ziet eruit alsof ze uit kunnen klappen. Leuke opties voor interactie dus!</p>
 <img src="./assets/2472526663_c5f3e3dbf7_o.jpg" alt="">
 <p>Deze afbeelding vind ik de aftelcounter heel gaaf, het heeft een doomsday gevoel en de contrast van de ronde sockets en de scherpere letters. Ook de oude casing met het rode licht heeft een hele gave esthetiek</p>
-<h4>di 25 feb</h4>
+<h4>di 25 februari</h4>
 <p>Vandaag begin gemaakt met plannen en het begin van de site. Fotos toevoegen?Volgende keer de machine "aan" kunnen zetten en de volgende interactie beslissen en integreren. Ook verder aan basisopmaak, opzoeken (nep) 3d element</p>
+
+<h4>ma 3 maart</h4>
+<p>Vandaag niet veel progressie aan het eindproduct, maar wel meegedaan met workshops en veel in codepennetjes geprobeerd:</p>
+<p>glitch effect</p>
+<a href="https://codepen.io/IKreike/pen/vEYxyzX"></a>
+<p>hoekjes oefenen</p>
+<img src="https://codepen.io/IKreike/pen/pvoeRem" alt="">
+<p>oefenen met 3d transforms</p>
+<img src="https://codepen.io/IKreike/pen/XJWMjyE" alt="">
+
+
+<p></p>
+<img src="" alt="">
+
+
 
 
 <h2> bronnenlijst </h2>
 <p>https://blog.logrocket.com/create-fancy-corners-css/ voor rechte hoeken. Nog niet gebruikt maar later miss wel inderessand 25/2/25</p>
 
 <p>bedankt colorpicker for saving my life with the oklch kleuren:https://oklch.com/#74,0.1747,66.18,100</p>
+
+<p>gradient borders</p>
+https://www.digitalocean.com/community/tutorials/css-gradient-borders-pure-css?utm_medium=content_acq&utm_source=css-tricks&utm_campaign=&utm_content=awareness_bestsellers
+
+<p>workshop van sanne over hoekjes en borders
+https://codepen.io/IKreike/pen/pvoeRem?editors=1100</p>
+
+
 <p></p>
+
 <img src="" alt="">
+<a href="http://"></a>

@@ -1,11 +1,11 @@
 :root {
-    --backroundColor:oklch(38% 0.0814 268.41);
-    --deviceColor:oklch(84.26% 0.1381 72.53);
-    --rustColor:rgb(99, 12, 12);
-    --accentColor:rgba(158, 102, 11);
+    --backroundColor: oklch(38% 0.0814 268.41);
+    --deviceColor: oklch(84.26% 0.1381 72.53);
+    --rustColor: rgb(99, 12, 12);
+    --accentColor: rgba(158, 102, 11);
 }
 
-body{
+body {
     /* background-color: rgba(240, 157, 24, 0.617); */
     background-color: var(--backroundColor);
     display: grid;
@@ -16,23 +16,43 @@ body{
 }
 
 /* different parts of the machine */
-section{
-    background-color: var(--deviceColor);
-     /* look into this for straight corners: https://blog.logrocket.com/create-fancy-corners-css/ */
-     padding: 1em;
-     border-bottom: 15vh var(--accentColor) solid;
+section {
+    /* background-color: var(--deviceColor); */
+    /* look into this for straight corners: https://blog.logrocket.com/create-fancy-corners-css/ */
+    /* padding: 1em; */
+    /* border-bottom: 15vh var(--accentColor) solid; */
 }
 
-section:nth-of-type(1){
+section:nth-of-type(1) {
     grid-column: span 3/5;
     /* grid-row: span 1/4; */
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
+
+    /* making corners */
+    /* workshop van sanne: https://codepen.io/IKreike/pen/pvoeRem?editors=1100 */
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom, left top, right top;
+    background-image:
+        linear-gradient(50deg, var(--accentColor) 5vw, var(--deviceColor) 0),
+        linear-gradient(-50deg, var(--accentColor) 5vw, var(--deviceColor) 0),
+        linear-gradient(160deg, transparent 5vw, var(--deviceColor) 0),
+        linear-gradient(-160deg, transparent 5vw, var(--deviceColor) 0)
+        ;
+
+    /* no degrees in borders, it gets changed to a straight line */
+    border-bottom: 15vh;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image: linear-gradient(45deg, red 5vw, green 0) 1;
+
+    /* background: linear-gradient(var(--deviceColor), transparent); */
 }
 
 /* display screen */
-div{
+div {
     grid-column: 2;
     grid-row: 2;
     background-color: var(--accentColor);
@@ -43,32 +63,46 @@ div{
 }
 
 /* Power button */
-input:nth-of-type(1), label:nth-of-type(1){
+input:nth-of-type(1),
+label:nth-of-type(1) {
     grid-column: 3;
     grid-row: 3;
     /* add styling on the div, on the thing or whatso? use sannes switch as reference? */
 }
 
-input:nth-of-type(1){
+input:nth-of-type(1) {
     display: none;
 }
 
-label:nth-of-type(1){
+label:nth-of-type(1) {
     background: linear-gradient(var(--deviceColor) 50%, var(--accentColor) 50%);
-    border:.7em var(--rustColor) solid;
-    border-bottom: 2em var(--backroundColor) solid;
+    /* border:.7em var(--rustColor) solid; */
+    /* border-bottom: 2em var(--backroundColor) solid; */
+    /* border: .7em solid; */
+    /* border: 10px solid; */
+
+    /* gradient border? */
+    /* source/ inspo: https://www.digitalocean.com/community/tutorials/css-gradient-borders-pure-css?utm_medium=content_acq&utm_source=css-tricks&utm_campaign=&utm_content=awareness_bestsellers */
+    /* color: green; */
+    border-width: 1em;
+    border-bottom: 2em;
+    /* border-image-width: 1em; */
+    border-style: solid;
+    border-image-slice: 1;
+    /* hij neemt de afmedingen van de input als waarde, dus kan niet in het midden van de border veranderen */
+    border-image: linear-gradient(to top, green 50%, var(--rustColor) 0) 1;
+
 }
 
-input:nth-of-type(1):checked + label{
-    /* background-color: rgb(205, 59, 59); */
-    background: linear-gradient(var(--accentColor) 50%, var(--deviceColor) 50%);
-
+/* switch de kleuren in de "checked" state */
+label:nth-of-type(1):has(input:checked) {
+    background: linear-gradient(to bottom, var(--accentColor) 50%, var(--deviceColor) 50%);
 }
 
 
 
 /* kijkt specifiek naar of de powerknop aanstaat */
-*:has(input#power:checked) div{
+*:has(input#power:checked) div {
     /* if the power switch is on, flicker into view as if the screen lights up*/
     background-color: rgba(128, 255, 0, 0.221);
 }
