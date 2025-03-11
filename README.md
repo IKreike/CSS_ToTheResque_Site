@@ -28,6 +28,9 @@
 <img src="./assets/2d perspectief.png" alt="2d perspectief">
 <img src="./assets/3d perspectief.png" alt="3d perspectief">
 
+<h4>ma 10 maart</h4>
+<p>Vandaag interactie gedaan met het uitklappen van een zijpaneel, extra aandacht besteed aan de arm van dat ding waar ik op het moment veel problemen mee heb want het zit over de section heen. Nils heeft geholpen met een mogelijke plossing, maar ik weet niet zeker of die werkt aangezien ik nog dingen op die section wil maken. Heb kleuren toegevoegd die een beetje op metaal lijken voor te knoppen, en het heeft meteen meer geheel dus dat is fijn. Ik heb met ::before en ::after elementen gewerkt en nieuwe dingen ontdekt. Ik heb nieuwe styling en animatie gegeven aan het paneel en aan de positionering ervan.</p>
+
 
 <p></p>
 <img src="" alt="">
