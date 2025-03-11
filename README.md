@@ -30,6 +30,13 @@
 
 <h4>ma 10 maart</h4>
 <p>Vandaag interactie gedaan met het uitklappen van een zijpaneel, extra aandacht besteed aan de arm van dat ding waar ik op het moment veel problemen mee heb want het zit over de section heen. Nils heeft geholpen met een mogelijke plossing, maar ik weet niet zeker of die werkt aangezien ik nog dingen op die section wil maken. Heb kleuren toegevoegd die een beetje op metaal lijken voor te knoppen, en het heeft meteen meer geheel dus dat is fijn. Ik heb met ::before en ::after elementen gewerkt en nieuwe dingen ontdekt. Ik heb nieuwe styling en animatie gegeven aan het paneel en aan de positionering ervan.</p>
+<img src="./assets/10:3:25.png" alt="">
+
+<h4>di 11 maart</h4>
+<p>Vandaag begonnen met het nog een keer nadenken over de haak, en een soort van oplossing gevonden. Advies gekregen om misschien toch naar een echt 3d perspectief te werken, maar dan zonder perspectief. Onderzoeken. Ik weet niet of ik daar genoeg tijd voor heb. Verder sliders gemaakt en die verbonden met een kleurenpuzzel.</p>
+<p>slider testing</p>
+<a href="https://codepen.io/IKreike/pen/yyLzbKa?editors=0100"></a>
+<img src="./assets/11:3:25.png" alt="">
 
 
 <p></p>

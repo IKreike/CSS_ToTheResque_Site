@@ -12,20 +12,49 @@
     <!-- base section -->
     <section>
         <!-- circle  -->
-        <div></div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <!-- div om de kleuren te testen -->
         <!-- <div></div> -->
 
         <!-- Power switch -->
         <!-- misschien licht in de hele kamer?s -->
-        <label> <input type="checkbox" name="scales" /> </label>
+        <label> <input type="checkbox" name="scales"> </label>
 
         <!-- switch out the sidebar -->
         <label> <input type="radio" name="sidebar"></label>
     </section>
-    <!-- <img src="" alt=""> -->
+
+    <!-- sidebar -->
     <section>
-        <div></div>
+        <div> </div>
+        <!-- <form action=""> -->
+        <fieldset>
+            <!-- geprobeerd met number inputs, maar ik vind dat ze te weinig customize options hebben voor de buttons (zonder js) -->
+            <!-- <label> <input type="number" min="1" max="4" value="1" name="code"></label>
+            <label> <input type="number" min="1" max="4" value="1" name="code"></label>
+            <label> <input type="number" min="1" max="4" value="1" name="code"></label>
+            <label> <input type="number" min="1" max="4" value="1" name="code"></label> -->
+
+            <label> input1
+                <input type="range" min="0" max=".8" step=".2" value="0" name="code1" orient="horizontal">	
+            </label>
+            <label> input2
+                <input type="range" min="0" max=".8" step=".2" value=".2" name="code2" orient="horizontal">	
+            </label>
+            <label> input3
+                <input type="range" min="0" max=".8" step=".2" value=".6" name="code3" orient="horizontal">	
+            </label>
+            <label> input4
+                <input type="range" min="0" max=".8" step=".2" value="0" name="code4" orient="horizontal">	
+            </label>
+
+        </fieldset>
+        <!-- </form> -->
     </section>
 
     <script src="./script/script.js"></script>
