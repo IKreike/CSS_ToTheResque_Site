@@ -1,0 +1,194 @@
+/* OM EEN 11-HOEK VAN DE BOVEN EN ONDERKANT TE MAKEN */
+/* :root {
+	--vlak11-angle:calc(360deg / 11);
+	
+	--vlak11: polygon(
+		calc(50% + 50% * sin( var(--vlak11-angle) * 0  ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 0  ) ),
+		calc(50% + 50% * sin( var(--vlak11-angle) * 1  ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 1  ) ),
+		calc(50% + 50% * sin( var(--vlak11-angle) * 2  ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 2  ) ),
+		calc(50% + 50% * sin( var(--vlak11-angle) * 3  ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 3  ) ),
+		calc(50% + 50% * sin( var(--vlak11-angle) * 4  ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 4  ) ),
+		calc(50% + 50% * sin( var(--vlak11-angle) * 5  ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 5  ) ),
+		calc(50% + 50% * sin( var(--vlak11-angle) * 6  ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 6  ) ),
+		calc(50% + 50% * sin( var(--vlak11-angle) * 7  ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 7  ) ),
+		calc(50% + 50% * sin( var(--vlak11-angle) * 8  ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 8  ) ),
+		calc(50% + 50% * sin( var(--vlak11-angle) * 9  ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 9  ) ),
+		calc(50% + 50% * sin( var(--vlak11-angle) * 10 ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 10 ) ),
+		calc(50% + 50% * sin( var(--vlak11-angle) * 11 ) ) calc(50% - 50% * cos( var(--vlak11-angle) * 11 ) )
+	);
+} */
+
+/* code van sanne: https://codepen.io/IKreike/pen/yyLPWam?editors=1100*/
+*, *::before, *::after {
+	box-sizing:border-box;	
+}
+
+
+:nth-of-type(1) { --i:1; }
+:nth-of-type(2) { --i:2; }
+:nth-of-type(3) { --i:3; }
+:nth-of-type(4) { --i:4; }
+:nth-of-type(5) { --i:5; }
+
+:nth-of-type(6) { --i:6; }
+:nth-of-type(7) { --i:7; }
+:nth-of-type(8) { --i:8; }
+:nth-of-type(9) { --i:9; }
+:nth-of-type(10) { --i:10; }
+
+:nth-of-type(11) { --i:11; }
+:nth-of-type(12) { --i:12; }
+:nth-of-type(13) { --i:13; }
+:nth-of-type(14) { --i:14; }
+:nth-of-type(15) { --i:15; }
+
+
+/* body {
+	margin:0;
+	height:100dvh;
+	
+	display:grid;
+	place-items:center;
+	
+	background-color:#bbb;
+	font-family: tahoma, sans-serif;
+} */
+
+
+/* LABEL */
+label:has(input[type=range]) {
+	--n:11;
+	--width-slot:3rem;
+	
+	position:relative;
+	display:block;
+	
+	display:grid;
+	place-content:center;
+	place-items:center;
+	
+	width:calc( var(--width-slot) * 3.8 );
+	height:calc( var(--width-slot) * 1 );
+	
+	background-color:red;
+
+/* 	ervoor zorgen dat het er niet onderdoor uitsteekt */
+	clip-path:polygon(
+		0 -100%,
+		100% -100%,
+		100% 100%,
+		0 100%,
+		0 -100%
+	);
+}
+
+
+/* INPUT */
+input[type=range] {
+	appearance:none;
+	
+	position:absolute;
+	inset:0;
+	margin:0;
+	
+/* 	interesting */
+	background-color:transparent;
+	
+	font-size:inherit;
+}
+
+::-webkit-slider-runnable-track {	
+	appearance:none;
+}
+
+::-moz-range-track {
+	appearance:none;
+}
+
+::-webkit-slider-thumb {
+	appearance:none;
+	width:1em;
+	height:1em;
+}
+
+::-moz-range-thumb {
+	appearance:none;
+	width:1em;
+	height:1em;
+}
+
+/* DIAL */
+label > div, label > div * {
+	transform-style:preserve-3d;
+}
+
+label > div {
+    background-color: blue;
+	display:grid;
+	place-content:center;
+	place-items:center;
+	
+	transform:
+/* 	iets naar beneden	 */
+		translateY( calc( var(--width-slot) * .28 ) )
+/* 	iets gedraait	 */
+		rotateX(20deg)
+/* 	zorgen dat hij meedraait met de slider	 */
+		rotateY( calc( 360deg / var(--n) * var(--spinner) ) )
+		;
+	
+	transition:.1s;
+}
+
+/* NUMMER/KANT IN DIAL */
+label > div div {
+    /* this kinda works in the codepen... */
+    /* background: aqua; */
+    background-color: aqua;
+	grid-area:1/1;
+	width:var(--width-slot);
+	height:var(--width-slot);
+    /* width: 100%; */
+	
+	display:grid;
+	place-content:center;
+	
+	transform:
+		rotateY( calc(360deg / var(--n) * 5 +  360deg / var(--n) * var(--i)) )
+		translateZ( calc( var(--width-slot) * 1.69  ) );
+	
+	font-size:1.5em;
+	font-weight:bold;
+	
+	background-color:hsl(0 0% calc( 96% - 5% * ( abs( var(--i) - 6 + var(--spinner) ) )  )   );
+}
+
+/* DIAL BOVEN EN ONDERKANT */
+label > div aside {
+	position:absolute;
+	width:calc( var(--width-slot) * 3.52 );
+	aspect-ratio:1;
+}
+
+label > div aside:nth-of-type(1) {
+	transform:
+		rotateX(90deg)
+		translateZ(calc(var(--width-slot) * .5));
+}
+
+label > div aside:nth-of-type(2) {
+	transform:
+		rotateX(90deg)
+		translateZ(calc(var(--width-slot) * -.5));
+}
+
+label > div aside::before {
+	content:"";
+	
+	display:block;
+	height:100%;
+	
+	background-color:#666;
+	
+	clip-path:var(--vlak11);
+}

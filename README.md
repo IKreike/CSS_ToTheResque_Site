@@ -62,6 +62,9 @@ https://codepen.io/IKreike/pen/LEYWMLm?editors=0100 </p>
 <p>cube tutorial and try-outs</p>
 <p>https://3dtransforms.desandro.com/cube</p>
 
+dialtje van sanne:
+https://codepen.io/IKreike/pen/yyLPWam?editors=1100
+
 
 <p></p>
 
