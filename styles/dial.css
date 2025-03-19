@@ -74,18 +74,6 @@ body{
 }
 
 
-/* body {
-	margin:0;
-	height:100dvh;
-	
-	display:grid;
-	place-items:center;
-	
-	background-color:#bbb;
-	font-family: tahoma, sans-serif;
-} */
-
-
 /* LABEL */
 label:has(input[type=range]) {
 	--n: 11;
@@ -123,13 +111,7 @@ input[type=range] {
 	inset: 0;
 	margin: 0;
 
-	/* 	interesting */
 	background-color: transparent;
-
-	/* borders also get cut of by the clip path */
-	/* fake an inset instead? */
-	/* border-top: var(--darkColor) 1px solid; */
-
 	font-size: inherit;
 }
 
@@ -160,7 +142,8 @@ label>div * {
 }
 
 label:nth-of-type(1)>div {
-	background-color: blue;
+	grid-area: "dial1";
+
 	display: grid;
 	place-content: center;
 	place-items: center;
@@ -177,6 +160,8 @@ label:nth-of-type(1)>div {
 }
 
 label:nth-of-type(2)>div {
+	grid-area: "dial2";
+
 	display: grid;
 	place-content: center;
 	place-items: center;
@@ -193,6 +178,8 @@ label:nth-of-type(2)>div {
 }
 
 label:nth-of-type(3)>div {
+	grid-area: "dial3";
+
 	display: grid;
 	place-content: center;
 	place-items: center;
@@ -209,6 +196,8 @@ label:nth-of-type(3)>div {
 }
 
 label:nth-of-type(4)>div {
+	grid-area: "dial4";
+
 	display: grid;
 	place-content: center;
 	place-items: center;
@@ -230,9 +219,6 @@ label:nth-of-type(4)>div {
 
 /* NUMMER/KANT IN DIAL */
 label>div>div {
-	/* this kinda works in the codepen... */
-	/* background: aqua; */
-	background-color: aqua;
 	background: linear-gradient(to left, var(--metalColorAccent) 5%, var(--metalColor) 0 95%, var(--metalColorAccent)0);
 	grid-area: 1/1;
 	width: var(--width-slot);
@@ -246,9 +232,6 @@ label>div>div {
 
 	font-size: 1.5em;
 	font-weight: bold;
-
-	/* nog steeds geen idee was dit in de eerste instantie voor was, het zorgde ervoor dat ik de dialkleur niet kon invullen dus ik heb m uitgecomment */
-	/* background-color:hsl(0 0% calc( 96% - 5% * ( abs( var(--i) - 6 + var(--spinner) ) )  )   ); */
 }
 
 /* DIAL BOVEN EN ONDERKANT */

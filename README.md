@@ -39,6 +39,10 @@
 <img src="./assets/11:3:25.png" alt="">
 
 
+<h4>Ma 17 en di 18 maart</h4>
+<p>Ik heb de kleuren aangepast, wat het meer 1 geheel maakt waar ik blij mee ben. Het is met ook gelukt om de radartjes in elkaar te zetten en te verbinden met de kleuren van de radar, waarbij ik een stukje wiskunde erbij moest doen. Ik vind het best interresant om vanuit de basis van een voorbeeld het compleet te proberen te begrijpen en ik denk nu dat ik alles ervan wel snap. Ik heb een titel met een kleine animatie toegevoegd voor de eisen. Ik weet niet wat ik voor de andere eisen moet/ wil doen aangezien die ook een deeltje structuur vergen. Ik heb even met container queries geprobeerd maar ik denk niet dat het resizing aspect echt nuttig is voor mijn project. Het zelfde is eigenlijk voor style queries en layers, ook al heb ik wel meerdere css bladen zodra de volgorde van die goed zit hoeft die niet veranderd te worden. Ik denk dat ik morgen nog een poging voor cq ga doen als ik meer ruimte heb in mijn hooft</p>
+
+
 <p></p>
 <img src="" alt="">
 <a href="http://"></a>
@@ -64,6 +68,9 @@ https://codepen.io/IKreike/pen/LEYWMLm?editors=0100 </p>
 
 dialtje van sanne:
 https://codepen.io/IKreike/pen/yyLPWam?editors=1100
+
+bounce easing
+https://easings.net/nl#easeOutBounce
 
 
 <p></p>
